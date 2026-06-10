@@ -29,6 +29,8 @@ When fetching a value by it's key:
 1. To prevent the bucket from getting too crowded (which increasses collisions and slows things down), hashmap keeps track of the load factor(0.75).
 2. When the number of entries exceeds (Capacity * load factor) ( for example 16*0.75), the internal is resized.
 3. During this resizing, the nodes are re-distributed by creating new hash code values into the newly resized bucket array.
+Note: 
+*** Rehashing is the process of automatically resizing a HashMap internal bucket array and redistributing the existing elements into this new, larger array ***
 
 ## Conversion of Hash Code to Index:
 
