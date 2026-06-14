@@ -43,7 +43,7 @@ Map (Separate Hierarchy):
 - Hashtable
 - ConcurrentHashMap
 
-# ******************************************************************* #
+# ************************************************************* #
 
 Collection Framework provides a set of ready-made data structures for data manipulation and organization without writing code from scratch.
 
@@ -123,8 +123,8 @@ The Collection view methods allows Map to be viewed as a Collection.
 2. values - Collection of values contained in the Map. This collection is not a set because multiple keys can map to the same value.
 3. entrySet - the set of key-value pairs contained in the Map. The Map interface provides a small nested interface called Map.Entry, the type of elements in this is set.
 
-* The collection views provides the only means to iteratre over a Map. (For ex.: iterate using keySet)
+* The collection views provides the only means to iterate over a Map. (For ex.: iterate using keySet)
 
-# ******************************************************************** #
+# ************************************************************* #
 
 

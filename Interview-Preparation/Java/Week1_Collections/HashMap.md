@@ -5,7 +5,7 @@ HashMap stores data in key-value pairs using a technique called hashing. Interna
 # Key Components:
 1. Bucket Array - The foundational data structure. By default, a hashmap starts with a capacity of 16 buckets.
 2. Node (Entries) - Each key-value pair is wrapped inside a node. A node contains key, value, hash code, and next pointer.
-3. Hashing Function - When we insert a key, a method hashCode() of key is executed and it generates a hash code. A a second hashing method then handles that the key-value pairs are evenly distributed across the buckets.
+3. Hashing Function - When we insert a key, a method hashCode() of key is executed and it generates a hash code. A second hashing method then handles that the key-value pairs are evenly distributed across the buckets.
 
 # The put() process (Insertion):
 When we add a key-value pair, hashmap goes through the following steps:
@@ -29,6 +29,7 @@ When fetching a value by it's key:
 1. To prevent the bucket from getting too crowded (which increasses collisions and slows things down), hashmap keeps track of the load factor(0.75).
 2. When the number of entries exceeds (Capacity * load factor) ( for example 16*0.75), the internal is resized.
 3. During this resizing, the nodes are re-distributed by creating new hash code values into the newly resized bucket array.
+
 Note: 
 *** Rehashing is the process of automatically resizing a HashMap internal bucket array and redistributing the existing elements into this new, larger array ***
 

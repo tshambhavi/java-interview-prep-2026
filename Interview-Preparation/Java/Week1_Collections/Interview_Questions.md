@@ -17,8 +17,8 @@ Implementations: ArraList, HashSet, and LinkedList.
 Collections Utility Class:
 * The Collections utility acts strictly as a helper. It can be invoked directly through the class name without creating an object of the same because all of it's methods are static.
 
-Key Algorithms: Sorting, searching, reversing, shuffling, and making collections thread-safe.Core 
-Methods: Collections.sort(List l), Collections.reverse(List l), Collections.binarySearch(List l, T key), and Collections.shuffle(List l)
+Key Algorithms: Sorting, searching, reversing, shuffling, and making collections thread-safe.
+Core Methods: Collections.sort(List l), Collections.reverse(List l), Collections.binarySearch(List l, T key), and Collections.shuffle(List l)
 
 
 2. What is the difference between Iterable and Iterator?

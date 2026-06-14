@@ -78,5 +78,5 @@ When the size of the current array exceeds the size of backing array, the list r
 
 * In order to add or remove values, change the forward or backward reference pointer of the previous or next nodes as required. No data shifts happen.
 
-## ------------------------------------------------------------------ ##
+## ----------------------------------------------------------- ##
 
