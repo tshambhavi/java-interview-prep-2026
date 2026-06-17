@@ -42,7 +42,7 @@ List<Student> students = new ArrayList<>();
 // ... add students ...
 Collections.sort(students); // Automatically invokes compareTo()
 
-# --------------------------------------------------------------------------------------- #
+# -------------------------------------------------------------------- #
 
 ## Understanding Comparator
 
@@ -76,4 +76,4 @@ Collections.sort(students, clearNameComparator); // Pass custom rules explicitly
 - Implement Comparable when there is an obvious, global "natural order" for your entity.
 - Choose Comparator when you need flexibility, need to supply multiple sorting views, or want to decouple your sorting rules from the data model entirely.
 
-# --------------------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------- #
