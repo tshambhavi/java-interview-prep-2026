@@ -86,7 +86,6 @@ public synchronized E peek()
 This means even single threaded programs
 pay the cost of locking — unnecessary overhead
 
-
 # Stack implementation using Array
 
 Uses a fixed size array

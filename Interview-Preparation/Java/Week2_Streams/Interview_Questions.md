@@ -13,6 +13,8 @@ Q3. What is the internal structure of ArrayDeque?
 A:  A resizable circular array with head and tail 
     pointers. Initial capacity is always a power of 2 
     (default 8), doubles when full.
+    Default Capacity is 16 but minimum threshold is 8.
+    If no size is provided while initializing the size is 16, if a minimum of 2 or 4 or such number is provided then the size initialized is 8.
 
 Q4. Why does ArrayDeque capacity have to be a power of 2?
 A:  So it can use bitwise AND (&) instead of modulo (%) 
