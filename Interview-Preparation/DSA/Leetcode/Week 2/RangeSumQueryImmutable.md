@@ -98,4 +98,5 @@ Precompute cumulative sums once (O(n)), then answer
 any range sum query in O(1) via prefix[j+1] - prefix[i].
 Only valid because the array never changes.
 
+![alt text](image.png)
 ----------
