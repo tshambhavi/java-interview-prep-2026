@@ -386,4 +386,27 @@ sufficient cookie to the least greedy child using two
 pointers — O(n log n + m log m) time, O(1) extra space.
 ```
 
+```java
+import java.util.Arrays;
+
+class Solution {
+    public int findContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
+
+        int i = 0;   // pointer for children
+        int j = 0;   // pointer for cookies
+
+        while (i < g.length && j < s.length) {
+            if (s[j] >= g[i]) {
+                i++;   // child satisfied, move to next child
+            }
+            j++;       // always move to next cookie
+        }
+
+        return i;
+    }
+}
+```
+
 ---
