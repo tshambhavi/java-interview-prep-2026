@@ -32,3 +32,7 @@ Time  : O(n log n)
 Space : O(1)
 
 -----------
+
+This is a classic greedy problem. The trick is recognizing that once the array is sorted, the answer is simply the sum of every even-indexed element.
+
+-----------
