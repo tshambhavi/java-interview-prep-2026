@@ -403,3 +403,10 @@ A: No — it only makes the object ELIGIBLE for garbage collection. The actual c
 | Memory Leak | Unused objects stay reachable, GC cannot free them |
 
 --------------
+
+## Why is stack thread-safe but heap not?
+
+Each thread gets its own stack. When a thread is created, the JVM allocates a separate stack just for it. So thread A's local variables and thread B's local variables live in completely different memory regions — they can never physically collide.
+The heap is shared by all threads. There's exactly one heap per JVM process, and every thread can read and write any object on it. So if thread A and thread B both hold a reference to the same object, they can both modify it at the same time.
+
+---------------
